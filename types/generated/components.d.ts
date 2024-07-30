@@ -77,6 +77,20 @@ export interface SharedSlider extends Schema.Component {
   };
 }
 
+export interface SharedSuccessStoryItem extends Schema.Component {
+  collectionName: 'components_shared_success_story_items';
+  info: {
+    displayName: 'SuccessStoryItem';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    content: Attribute.String;
+    name: Attribute.String;
+    position: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -86,6 +100,7 @@ declare module '@strapi/types' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.success-story-item': SharedSuccessStoryItem;
     }
   }
 }

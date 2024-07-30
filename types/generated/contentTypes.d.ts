@@ -982,20 +982,22 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
   };
 }
 
-export interface ApiSuccessStorySuccessStory extends Schema.CollectionType {
+export interface ApiSuccessStorySuccessStory extends Schema.SingleType {
   collectionName: 'success_stories';
   info: {
     singularName: 'success-story';
     pluralName: 'success-stories';
     displayName: 'Success Story';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    content: Attribute.String;
-    name: Attribute.String;
-    position: Attribute.String;
+    story1: Attribute.Component<'shared.success-story-item'>;
+    story2: Attribute.Component<'shared.success-story-item'>;
+    story3: Attribute.Component<'shared.success-story-item'>;
+    story4: Attribute.Component<'shared.success-story-item'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
