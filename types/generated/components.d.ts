@@ -1,5 +1,20 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface SharedByTheNumberItem extends Schema.Component {
+  collectionName: 'components_shared_by_the_number_items';
+  info: {
+    displayName: 'ByTheNumberItem';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    value: Attribute.Integer;
+    suffix: Attribute.String;
+    title: Attribute.String;
+    description: Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Schema.Component {
   collectionName: 'components_shared_media';
   info: {
@@ -65,6 +80,7 @@ export interface SharedSlider extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'shared.by-the-number-item': SharedByTheNumberItem;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

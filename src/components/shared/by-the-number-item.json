@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_by_the_number_items",
+  "info": {
+    "displayName": "ByTheNumberItem",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "integer"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

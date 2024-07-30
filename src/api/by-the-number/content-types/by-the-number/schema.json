@@ -4,24 +4,34 @@
   "info": {
     "singularName": "by-the-number",
     "pluralName": "by-the-numbers",
-    "displayName": "By the number"
+    "displayName": "By the number",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "placements": {
-      "type": "integer"
+    "item1": {
+      "displayName": "ByTheNumberItem",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.by-the-number-item"
     },
-    "projects": {
-      "type": "integer"
+    "item2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.by-the-number-item"
     },
-    "roles": {
-      "type": "integer"
+    "item3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.by-the-number-item"
     },
-    "talents": {
-      "type": "integer"
+    "item4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.by-the-number-item"
     }
   }
 }

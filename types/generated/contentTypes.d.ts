@@ -884,15 +884,16 @@ export interface ApiByTheNumberByTheNumber extends Schema.SingleType {
     singularName: 'by-the-number';
     pluralName: 'by-the-numbers';
     displayName: 'By the number';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    placements: Attribute.Integer;
-    projects: Attribute.Integer;
-    roles: Attribute.Integer;
-    talents: Attribute.Integer;
+    item1: Attribute.Component<'shared.by-the-number-item'>;
+    item2: Attribute.Component<'shared.by-the-number-item'>;
+    item3: Attribute.Component<'shared.by-the-number-item'>;
+    item4: Attribute.Component<'shared.by-the-number-item'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
