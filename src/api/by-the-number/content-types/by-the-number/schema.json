@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "by_the_numbers",
+  "info": {
+    "singularName": "by-the-number",
+    "pluralName": "by-the-numbers",
+    "displayName": "By the number"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "placements": {
+      "type": "integer"
+    },
+    "projects": {
+      "type": "integer"
+    },
+    "roles": {
+      "type": "integer"
+    },
+    "talents": {
+      "type": "integer"
+    }
+  }
+}

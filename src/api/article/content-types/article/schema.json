@@ -4,7 +4,7 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Article",
+    "displayName": "Blog",
     "description": "Create your blog content"
   },
   "options": {
@@ -53,6 +53,15 @@
         "shared.rich-text",
         "shared.slider"
       ]
+    },
+    "tableOfContents": {
+      "type": "json"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "isHighlight": {
+      "type": "boolean"
     }
   }
 }
