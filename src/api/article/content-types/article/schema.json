@@ -4,7 +4,7 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Blog",
+    "displayName": "Article",
     "description": "Create your blog content"
   },
   "options": {
