@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "by_the_numbers",
+  "info": {
+    "singularName": "by-the-number",
+    "pluralName": "by-the-numbers",
+    "displayName": "By the number",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item1": {
+      "displayName": "ByTheNumberItem",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.by-the-number-item"
+    },
+    "item2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.by-the-number-item"
+    },
+    "item3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.by-the-number-item"
+    },
+    "item4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.by-the-number-item"
+    }
+  }
+}

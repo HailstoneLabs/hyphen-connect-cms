@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_success_story_items",
+  "info": {
+    "displayName": "SuccessStoryItem",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

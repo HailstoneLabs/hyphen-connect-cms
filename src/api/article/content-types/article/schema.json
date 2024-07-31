@@ -53,6 +53,15 @@
         "shared.rich-text",
         "shared.slider"
       ]
+    },
+    "tableOfContents": {
+      "type": "json"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "isHighlight": {
+      "type": "boolean"
     }
   }
 }

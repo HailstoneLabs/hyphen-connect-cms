@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "success_stories",
+  "info": {
+    "singularName": "success-story",
+    "pluralName": "success-stories",
+    "displayName": "Success Story",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "story1": {
+      "displayName": "SuccessStoryItem",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.success-story-item"
+    },
+    "story2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.success-story-item"
+    },
+    "story3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.success-story-item"
+    },
+    "story4": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.success-story-item"
+    }
+  }
+}
