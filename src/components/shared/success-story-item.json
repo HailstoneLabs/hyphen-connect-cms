@@ -8,7 +8,7 @@
   "options": {},
   "attributes": {
     "content": {
-      "type": "string"
+      "type": "text"
     },
     "name": {
       "type": "string"
