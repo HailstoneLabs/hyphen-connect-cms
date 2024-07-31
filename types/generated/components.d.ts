@@ -85,7 +85,7 @@ export interface SharedSuccessStoryItem extends Schema.Component {
     description: '';
   };
   attributes: {
-    content: Attribute.String;
+    content: Attribute.Text;
     name: Attribute.String;
     position: Attribute.String;
   };
