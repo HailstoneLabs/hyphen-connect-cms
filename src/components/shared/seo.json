@@ -23,6 +23,11 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "keywords": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::keyword.keyword"
     }
   }
 }
