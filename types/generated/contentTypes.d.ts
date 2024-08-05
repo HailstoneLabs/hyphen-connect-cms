@@ -964,6 +964,9 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
     siteName: Attribute.String & Attribute.Required;
     siteDescription: Attribute.Text & Attribute.Required;
     defaultSeo: Attribute.Component<'shared.seo'>;
+    careersSeo: Attribute.Component<'shared.seo'>;
+    talentsSeo: Attribute.Component<'shared.seo'>;
+    blogSeo: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
