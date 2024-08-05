@@ -5,6 +5,7 @@
     "@strapi/plugin-i18n": "4.21.1",
     "@strapi/plugin-users-permissions": "4.21.1",
     "@strapi/strapi": "4.21.1",
+    "@strapi/utils": "^4.25.6",
     "better-sqlite3": "8.6.0",
     "dompurify": "^3.1.6",
     "fs-extra": "^10.0.0",

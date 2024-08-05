@@ -984,6 +984,36 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
   };
 }
 
+export interface ApiKeywordKeyword extends Schema.CollectionType {
+  collectionName: 'keywords';
+  info: {
+    singularName: 'keyword';
+    pluralName: 'keywords';
+    displayName: 'Keyword';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::keyword.keyword',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::keyword.keyword',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiSuccessStorySuccessStory extends Schema.SingleType {
   collectionName: 'success_stories';
   info: {
@@ -1041,6 +1071,7 @@ declare module '@strapi/types' {
       'api::by-the-number.by-the-number': ApiByTheNumberByTheNumber;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
+      'api::keyword.keyword': ApiKeywordKeyword;
       'api::success-story.success-story': ApiSuccessStorySuccessStory;
     }
   }

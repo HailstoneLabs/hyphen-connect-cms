@@ -62,6 +62,11 @@ export interface SharedSeo extends Schema.Component {
     metaTitle: Attribute.String & Attribute.Required;
     metaDescription: Attribute.Text & Attribute.Required;
     shareImage: Attribute.Media & Attribute.Required;
+    keywords: Attribute.Relation<
+      'shared.seo',
+      'oneToMany',
+      'api::keyword.keyword'
+    >;
   };
 }
 
